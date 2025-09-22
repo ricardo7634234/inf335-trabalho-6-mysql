@@ -1,0 +1,14 @@
+-- Cria um novo banco de dados (opcional, pode usar um existente)
+CREATE DATABASE IF NOT EXISTS `loja_db`;
+
+-- Usa o banco de dados criado
+USE `loja_db`;
+
+-- Cria a tabela 'produtos'
+CREATE TABLE IF NOT EXISTS `produtos` (
+    `codigo` VARCHAR(50) PRIMARY KEY,
+    `nome` VARCHAR(255) NOT NULL,
+    `descricao` TEXT,
+    `valor` DECIMAL(10, 2) NOT NULL,
+    `estado` VARCHAR(100)
+);
